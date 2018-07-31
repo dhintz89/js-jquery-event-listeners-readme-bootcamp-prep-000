@@ -12,9 +12,17 @@ function frameIt() {
 }
 
 function pressIt() {
-  $('form input').on('keydown' function(key){
-    if(key.which===)
-  }
+  $('form input').on('keydown', function(key){
+    if(key.which===71){
+      alert("You have pressed the G key!");
+    }
+  });
+}
+
+function submitIt() {
+  $('form').on('submit', function(){
+    alert("Your form is going to be submitted now.");
+  });
 }
 
 $(document).ready(function(){
